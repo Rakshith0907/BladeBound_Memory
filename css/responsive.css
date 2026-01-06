@@ -22,3 +22,41 @@
         height: 100px;
     }
 }
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 768px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px;
+    }
+
+    .card {
+        width: 130px;
+        height: 180px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 480px) {
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px;
+    }
+
+    .card {
+        width: 150px;
+        height: 210px;
+    }
+
+    .top-bar h2 {
+        font-size: 1.1rem;
+    }
+
+    .stat {
+        font-size: 0.85rem;
+    }
+}

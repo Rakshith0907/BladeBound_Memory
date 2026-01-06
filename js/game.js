@@ -1,7 +1,3 @@
-/* =========================
-   BLADEBOUND MEMORY - GAME
-========================= */
-
 let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
@@ -10,6 +6,11 @@ let moves = 0;
 let matchedPairs = 0;
 let timerInterval = null;
 let secondsElapsed = 0;
+
+// Redirect to home on page reload
+if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+    window.location.href = "index.html";
+}
 
 /* =========================
    INITIALIZE GAME
